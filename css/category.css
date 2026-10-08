@@ -1,0 +1,807 @@
+/* =========================================================
+   VINI JOB ALERTS
+   CATEGORY PAGES CSS
+
+   Used by:
+   Results
+   Admit Card
+   Answer Key
+   Syllabus
+   Scholarships
+
+   IMPORTANT:
+   Do NOT put this CSS in style.css
+   ========================================================= */
+
+
+/* =========================================================
+   BASIC RESET
+   ========================================================= */
+
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    background: linear-gradient(
+        135deg,
+        #071b4d,
+        #172b68
+    );
+
+    color: white;
+
+    padding: 20px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+
+.header-container {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+
+.logo span {
+    color: #19d9ff;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.main-nav {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.nav-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(25,217,255,0.45);
+
+    padding: 9px 13px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+
+.nav-button:hover {
+    background: #19d9ff;
+
+    color: #071b4d;
+
+    border-color: #19d9ff;
+}
+
+
+.nav-button.active {
+    background: linear-gradient(
+        135deg,
+        #123b78,
+        #253d86
+    );
+
+    border-color: #19d9ff;
+
+    box-shadow:
+        0 0 0 1px rgba(25,217,255,0.1);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.category-hero {
+    background: linear-gradient(
+        135deg,
+        #071b4d,
+        #172b68
+    );
+
+    color: white;
+
+    padding: 62px 20px 35px;
+
+    text-align: center;
+}
+
+
+.hero-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   VERIFIED BADGE
+   ========================================================= */
+
+.verified-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border: 1px solid #19d9ff;
+
+    color: white;
+
+    padding: 7px 14px;
+
+    border-radius: 25px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.verified-badge .check {
+    width: 18px;
+
+    height: 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #16d48b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.category-hero h1 {
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin-bottom: 13px;
+
+    font-weight: 800;
+}
+
+
+.category-hero p {
+    font-size: 16px;
+
+    color: #eef4ff;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   SEARCH BOX
+   SAME HORIZONTAL STYLE
+   ========================================================= */
+
+.category-search {
+    width: 100%;
+
+    max-width: 850px;
+
+    height: 58px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    background: white;
+
+    border: 2px solid #19d9ff;
+
+    border-radius: 35px;
+
+    padding: 4px;
+
+    box-shadow:
+        0 5px 25px rgba(0,0,0,0.15);
+}
+
+
+/* =========================================================
+   SEARCH INPUT
+   ========================================================= */
+
+.category-search input {
+    flex: 1;
+
+    width: auto;
+
+    min-width: 0;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 0 20px;
+
+    font-size: 14px;
+
+    color: #222;
+
+    border-radius: 30px;
+}
+
+
+.category-search input::placeholder {
+    color: #777;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+   ========================================================= */
+
+.category-search button {
+    width: 90px;
+
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #39c9f5,
+        #596cff
+    );
+
+    color: white;
+
+    font-weight: 700;
+
+    padding: 0 20px;
+
+    border-radius: 30px;
+
+    transition: 0.25s ease;
+}
+
+
+.category-search button:hover {
+    background: linear-gradient(
+        135deg,
+        #19d9ff,
+        #4156f5
+    );
+
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   INFORMATION CHECKED
+   ========================================================= */
+
+.checked-date {
+    margin-top: 12px !important;
+
+    margin-bottom: 0 !important;
+
+    font-size: 11px !important;
+
+    color: #dce7ff !important;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.category-content {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 45px 20px 70px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+
+.section-heading h2 {
+    color: #0b2b72;
+
+    font-size: 28px;
+
+    margin-bottom: 7px;
+}
+
+
+.section-heading p {
+    color: #6680a8;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.category-card {
+    background: white;
+
+    border: 1px solid #dce5f3;
+
+    border-radius: 13px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 4px 16px rgba(19,52,100,0.06);
+
+    transition: 0.25s ease;
+}
+
+
+.category-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(19,52,100,0.12);
+}
+
+
+/* =========================================================
+   CARD TAG
+   ========================================================= */
+
+.card-tag {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #eef7ff;
+
+    color: #0a5bb5;
+
+    border: 1px solid #c9e4ff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.category-card h3 {
+    color: #0c2d72;
+
+    font-size: 19px;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.category-card p {
+    color: #66758e;
+
+    font-size: 14px;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================================================
+   CARD INFORMATION
+   ========================================================= */
+
+.card-info {
+    background: #f5f8fc;
+
+    border-radius: 8px;
+
+    padding: 11px 13px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-info div {
+    font-size: 12px;
+
+    color: #4d607b;
+
+    margin-bottom: 4px;
+}
+
+
+.card-info div:last-child {
+    margin-bottom: 0;
+}
+
+
+.card-info strong {
+    color: #183b76;
+}
+
+
+/* =========================================================
+   YELLOW BUTTON
+   ========================================================= */
+
+.card-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    background: #ffb800;
+
+    color: #111;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 10px 17px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition: 0.25s ease;
+}
+
+
+.card-button:hover {
+    background: #ffca28;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   NO RESULT
+   ========================================================= */
+
+.no-result {
+    display: none;
+
+    background: white;
+
+    border: 1px solid #dce5f3;
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+    background: #071b4d;
+
+    color: #d9e6ff;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+.site-footer p {
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+
+.footer-links {
+    margin-top: 8px;
+}
+
+
+.footer-links a {
+    color: #19d9ff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    margin: 0 7px;
+}
+
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+   SEARCH BOX STILL HORIZONTAL
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding: 17px 12px;
+    }
+
+
+    .logo {
+        font-size: 22px;
+
+        margin-bottom: 14px;
+    }
+
+
+    .main-nav {
+        gap: 5px;
+    }
+
+
+    .nav-button {
+        padding: 8px 10px;
+
+        font-size: 10px;
+    }
+
+
+    .category-hero {
+        padding: 45px 15px 30px;
+    }
+
+
+    .category-hero h1 {
+        font-size: 29px;
+    }
+
+
+    .category-hero p {
+        font-size: 14px;
+    }
+
+
+    /* SEARCH BOX */
+
+    .category-search {
+        width: 100%;
+
+        height: 54px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        border-radius: 35px;
+
+        padding: 4px;
+    }
+
+
+    .category-search input {
+        flex: 1;
+
+        width: auto;
+
+        min-width: 0;
+
+        height: 100%;
+
+        padding: 0 14px;
+
+        font-size: 13px;
+    }
+
+
+    .category-search button {
+        width: 85px;
+
+        height: 42px;
+
+        min-width: 85px;
+
+        padding: 0 12px;
+
+        font-size: 12px;
+    }
+
+
+    .category-content {
+        padding: 35px 15px 55px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .category-card {
+        padding: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREEN
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .nav-button {
+        padding: 7px 8px;
+
+        font-size: 9px;
+    }
+
+
+    .category-hero h1 {
+        font-size: 25px;
+    }
+
+
+    .category-search {
+        height: 50px;
+    }
+
+
+    .category-search input {
+        padding: 0 10px;
+
+        font-size: 11px;
+    }
+
+
+    .category-search button {
+        width: 75px;
+
+        min-width: 75px;
+
+        height: 38px;
+
+        font-size: 11px;
+
+        padding: 0 8px;
+    }
+
+}
