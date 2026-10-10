@@ -1,0 +1,146 @@
+/* Vini Job Alerts - Header logo + LIVE glow */
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+/* ---- Brand (logo + naam) ---- */
+.vj-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.vj-brand-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 0 16px rgba(84, 242, 255, 0.45);
+    border: 1px solid rgba(84, 242, 255, 0.5);
+}
+
+.vj-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.vj-brand-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vj-brand-top strong {
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(84, 242, 255, 0.35);
+}
+
+.vj-brand-bottom {
+    color: #54f2ff;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgba(84, 242, 255, 0.8);
+}
+
+/* ---- LIVE glow badge ---- */
+.vj-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    background: rgba(25, 217, 139, 0.12);
+    border: 1px solid #19d98b;
+    color: #7dffc4;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: vjLiveGlow 1.6s ease-in-out infinite;
+}
+
+.vj-live i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #19ff9a;
+    box-shadow: 0 0 8px #19ff9a;
+    animation: vjLiveDot 1.2s ease-in-out infinite;
+}
+
+@keyframes vjLiveGlow {
+    0%, 100% { box-shadow: 0 0 4px rgba(25, 217, 139, 0.35); }
+    50%      { box-shadow: 0 0 16px rgba(25, 255, 154, 0.85); }
+}
+
+@keyframes vjLiveDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.35; transform: scale(0.75); }
+}
+
+/* ---- Tablet / Mobile ---- */
+@media (max-width: 1000px) {
+    .header-content {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .vj-brand {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .vj-brand-logo {
+        width: 44px;
+        height: 44px;
+    }
+    .vj-brand-top strong {
+        font-size: 19px;
+    }
+    .vj-brand-bottom {
+        font-size: 16px;
+    }
+}
+
+/* Header layout */
+.site-header .header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.site-header .header-content {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.site-header .vj-brand {
+    text-decoration: none;
+}
+
+.site-header .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+@media (max-width: 600px) {
+    .site-header .header-container {
+        padding: 12px;
+    }
+
+    .site-header .main-nav {
+        gap: 5px;
+    }
+}
